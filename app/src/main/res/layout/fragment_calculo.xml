@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".view.CalculoFragment">
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,5 +42,13 @@
         android:id="@+id/btnEnviar"
         android:text="Enviar"
         android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVoltar"
+        android:text="Voltar"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
         android:layout_gravity="center"/>
 </LinearLayout>
