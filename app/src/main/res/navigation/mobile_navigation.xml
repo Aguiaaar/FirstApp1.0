@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/calculoFragment"
-        android:name="com.analauraaguiar.firstapp10.view.CalculoFragment"
+        android:name="com.analauraaguiar.firstapp10.view.PessoaFragment"
         android:label="fragment_calculo"
         tools:layout="@layout/fragment_calculo" />
     <fragment
