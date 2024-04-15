@@ -2,12 +2,10 @@ package com.analauraaguiar.firstapp10.view
 
 import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.analauraaguiar.firstapp10.R
+import androidx.fragment.app.Fragment
 import com.analauraaguiar.firstapp10.databinding.FragmentVerificaBinding
 
 class VerificaFragment : Fragment() {
@@ -48,9 +46,6 @@ class VerificaFragment : Fragment() {
             }
         }
 
-        binding.btnVoltar.setOnClickListener {
-            findNavController().navigate(R.id.homeFragment)
-        }
 
     }
 

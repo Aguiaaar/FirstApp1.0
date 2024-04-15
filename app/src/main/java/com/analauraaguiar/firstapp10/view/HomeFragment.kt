@@ -1,10 +1,10 @@
 package com.analauraaguiar.firstapp10.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.analauraaguiar.firstapp10.R
 import com.analauraaguiar.firstapp10.databinding.FragmentHomeBinding
@@ -23,8 +23,8 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnCalculo.setOnClickListener {
-            findNavController().navigate(R.id.calculoFragment)
+        binding.btnCadastroPessoa.setOnClickListener {
+            findNavController().navigate(R.id.allPessoasFragment)
 
         }
         binding.btnVerifica.setOnClickListener {

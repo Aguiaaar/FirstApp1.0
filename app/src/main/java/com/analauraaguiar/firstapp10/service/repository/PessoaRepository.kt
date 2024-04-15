@@ -13,8 +13,9 @@ class PessoaRepository(context: Context) {
     suspend fun getPessoa(id: Int){
         firstAppDb.getPessoa(id)
     }
-    suspend fun loadPessoas(){
-        firstAppDb.getAll()
+    suspend fun getPessoas(): List<Pessoa>{
+        return firstAppDb.getAll()
+
     }
     suspend fun updatePessoa(pessoa: Pessoa){
         firstAppDb.update(pessoa)

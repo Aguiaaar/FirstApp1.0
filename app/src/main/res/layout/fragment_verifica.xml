@@ -53,13 +53,5 @@
         app:layout_constraintTop_toBottomOf="@id/edtEmail"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnVoltar"
-        android:text="Voltar"
-        android:textStyle="bold"
-        android:backgroundTint="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnviar"
-        app:layout_constraintStart_toStartOf="@+id/btnEnviar"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

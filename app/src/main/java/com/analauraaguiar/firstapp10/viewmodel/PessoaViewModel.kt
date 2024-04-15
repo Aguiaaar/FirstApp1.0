@@ -19,6 +19,7 @@ class PessoaViewModel(application: Application) : AndroidViewModel(application) 
         viewModelScope.launch(Dispatchers.IO) { repository.getPessoa(id) }
 
     }
+
     fun update(pessoa: Pessoa){
         viewModelScope.launch(Dispatchers.IO) { repository.updatePessoa(pessoa) }
 
