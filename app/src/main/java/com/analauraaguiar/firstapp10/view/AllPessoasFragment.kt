@@ -37,13 +37,17 @@ class AllPessoasFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //Quando clicar em algum item da lista
-        adapter = PessoaAdapter(viewModel.pessoaList.value){
-
+        adapter = PessoaAdapter(viewModel.pessoaList.value){pessoa ->
+            val pessoaBundle = Bundle()
+            pessoaBundle.putInt("pessoaId", pessoa.id)
+            arguments = pessoaBundle
+//            findNavController().navigate(R.id.pessoaFragment,arguments)
+            findNavController().navigate(R.id.pessoaDetailFragment,arguments)
         }
         //Configura a Recycler
         val recycler = binding.rvPessoas
         recycler.layoutManager = LinearLayoutManager(requireContext())
-        recycler.adapter =adapter
+        recycler.adapter=adapter
 
         //Observa para adicionar um item na lista quando for adicionado
         viewModel.pessoaList.observe(viewLifecycleOwner){
